@@ -22,7 +22,7 @@
       referrerpolicy="no-referrer"
     />
     <!-- fontaawesome/ -->
-    <script src="js/javascript.js" defer></script>
+    
     <title>ClimaOuTempo</title>
   </head>
   <body>
@@ -38,31 +38,33 @@
           <button id="search">
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
+        
         </div>
+        <div class="error-container"></div>
       </div>
-      <div id="weather-data">
+      <div id="weather-data" class="hide">
         <h2>
           <i class="fa-solid fa-location-dot"></i>
-          <span id="city">Valadares</span>
-          <img src="https://www.countryflagicons.com/SHINY/64/BR.png" alt="Bandeira do país" id="country" />
+          <span id="city"></span>
+          <img src="" alt="Bandeira do país" id="country" />
         </h2>
-        <p id="temperature"><span>38</span>&deg;C</p>
+        <p id="temperature"><span></span>&deg;C</p>
         <div id="description-container">
           <p id="description">Chuva</p>
-          <img src="https://openweathermap.org/img/wn/01d.png" alt="Condiçoes do tempo" id="weather-icon" />
+          <img src="" alt="Condiçoes do tempo" id="weather-icon" />
         </div>
-        <div id="detais-container">
-
-            <p id="wind">
-                <i class="fa-solid fa-droplet" ></i>
-            <span>46%</span>
-            <p id="humidity">
-                <i class="fa-solid fa-wind" ></i>
-            <span>22km/h</span>
-            </p>
-            </p>
+        <div id="details-container">
+          <p id="wind">
+            <i class="fa-solid fa-wind"></i>
+            <span></span>
+          </p>
+          <p id="humidity">
+            <i class="fa-solid fa-droplet"></i>
+            <span></span>
+          </p>
         </div>
       </div>
     </div>
+    <script src="js/javascript.js" defer></script>
   </body>
 </html>
